@@ -1,0 +1,371 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700|Montserrat:400,700);
+
+/* ======================
+
+Base Styles
+
+======================= */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+	/*min-height: calc(100vh - 51px);  This sticks the footer to the bottom of the screen*/ 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #594649;
+}
+
+body {
+  background: #fff;
+  font: 1em/1.5 'Libre Baskerville', serif;
+  color: #594649;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================
+
+Navigation Styles
+
+======================= */
+
+.mainNav {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+}
+
+.name {
+  color: #594649;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin: .7em 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.navList {
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+.navList a {
+  background-color: #B6C9CD;
+  color: #594649;
+  display: block;
+  padding: 1em 2.5em;
+  margin: 0.3125em 0;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navList a:hover {
+  color: #594649;
+  background-color: #fff;
+  border-color: #594649;
+}
+
+/* ======================
+
+Header Styles
+
+======================= */
+
+.headerFlex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+  background: url(../img/notomRoad1100x474.jpg) #EEEEEE no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 400px;
+}
+
+.headerBio {
+  max-width: 500px;
+  text-align: center;
+  margin: 2.5em 0;
+  color: #594649;
+  order: 2;
+}
+
+.headerPic {
+  background: #F64740;
+  width: 150px;
+  height: 150px;
+  margin: 2.5em 1em 0 1em;
+  border: 3px solid #594649;
+  order: 1;
+}
+
+/* ======================
+
+Experience Styles
+
+======================= */
+
+.experience {
+  margin: 0 1.5em;
+  display: flex;
+  flex-flow: column;
+}
+
+.experience h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.5em 0 1.5em 0;
+}
+
+.e1, .e3, .e5 {
+  text-align: center;
+}
+
+/* ======================
+
+Skills Styles
+
+======================= */
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.5em 0 1.5em 0;
+}
+
+/* ======================
+
+Education Styles
+
+======================= */
+
+.education {
+  text-align: center;
+}
+
+.education h3 {
+  text-transform: uppercase;
+  margin: 5.5em 0 1em 0;
+}
+
+/* ======================
+
+Portfolio Styles
+
+======================= */
+
+#portfolio h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.5em 0 5.5em 0;
+}
+
+/* ======================
+
+Gallery Styles
+
+======================= */
+
+.gallery {
+  background: #D4D5D8;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.galleryItem img {
+  max-width: 100%;
+}
+
+.galleryItem:not(:last-of-type) {
+  margin-bottom: 2.5em;
+}
+
+/* ======================
+
+Contact Styles
+
+======================= */
+
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.5em 0 2.5em 0;
+  color: #111;
+}
+
+#contact {
+  background: #fff;
+  color: #111;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact p {
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* ======================
+
+Footer Styles
+
+======================= */
+
+footer {
+  font-size: 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #594649;
+  padding: 0 0 1em 0;
+}
+
+.footerList {
+  display: flex;
+  flex-flow: row;
+  list-style-type: none;
+  color: #594649;
+}
+
+ul.footerList {
+  margin: 0;
+  padding: 0;
+}
+
+.footerList li {
+  padding: 0 .4em;
+}
+
+.footerList a {
+  text-decoration: none;
+}
+
+.fa-linkedin-square,
+.fa-github-square {
+  color: #594649;
+  transition: all .2s ease-in-out;
+}
+
+.fa-linkedin-square:hover,
+.fa-github-square:hover {
+  transform: scale(1.5);
+}
+
+/* ======================
+
+Media Queries
+
+======================= */
+
+@media (min-width: 769px) {
+	.wrapper {
+		width: 90%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+  .mainNav,
+  .navList {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .navList a {
+    background: #fff;
+    padding: 1em 2.5em;
+  }
+
+  .headerFlex {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+  }
+
+  .headerPic {
+    margin: 2.5em 0;
+  }
+
+  .headerBio {
+    margin: 0 .5em;
+    align-self: center;
+  }
+
+  .gallery {
+    max-width: 1240px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galleryItem {
+    min-width: 350px;
+    max-width: 350px;
+  }
+
+	footer {
+		width: 70%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1025px) {
+  .mainNav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navList {
+    justify-content: flex-end;
+  }
+
+  .name {
+    width: 300px;
+  }
+
+}

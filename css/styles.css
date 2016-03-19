@@ -112,7 +112,7 @@ Header Styles
 .headerBio {
   max-width: 500px;
   text-align: center;
-  margin: 2.5em 0;
+  margin: 2.5em .4em;
   color: #594649;
   order: 2;
 }
@@ -133,17 +133,15 @@ Experience Styles
 ======================= */
 
 .experience {
-  margin: 0 1.5em;
   display: flex;
   flex-flow: column;
+  margin: 0 1em;
 }
 
 .experience h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 5.5em 0 1.5em 0;
-  border-top: 2px dashed #594649;
-  border-bottom: 2px dashed #594649;
 }
 
 .e1, .e3, .e5 {
@@ -172,8 +170,6 @@ Skills Styles
   text-align: center;
   text-transform: uppercase;
   margin: 5.5em 0 1.5em 0;
-  border-top: 2px dashed #594649;
-  border-bottom: 2px dashed #594649;
 }
 
 /* ======================
@@ -189,8 +185,6 @@ Education Styles
 .education h3 {
   text-transform: uppercase;
   margin: 5.5em 0 1em 0;
-  border-top: 2px dashed #594649;
-  border-bottom: 2px dashed #594649;
 }
 
 /* ======================
@@ -203,8 +197,6 @@ Portfolio Styles
   text-align: center;
   text-transform: uppercase;
   margin: 5.5em 0 5.5em 0;
-  border-top: 2px dashed #594649;
-  border-bottom: 2px dashed #594649;
 }
 
 /* ======================
@@ -241,8 +233,6 @@ Contact Styles
   text-align: center;
   text-transform: uppercase;
   margin: 5.5em 0 2.5em 0;
-  border-top: 2px dashed #594649;
-  border-bottom: 2px dashed #594649;
 }
 
 #contact {

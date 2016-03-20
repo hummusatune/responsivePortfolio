@@ -122,7 +122,6 @@ Header Styles
   width: 150px;
   height: 150px;
   margin: 2.5em 1em 0 1em;
-  border: 3px solid #594649;
   order: 1;
 }
 
@@ -141,11 +140,14 @@ Experience Styles
 .experience h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 5.5em 0 1.5em 0;
+  margin: 5.5em 0 1em 0;
+  border-bottom: 2px dashed #594649;
 }
 
 .e1, .e3, .e5 {
   text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.1em;
 }
 
 /*.e1 p:first-child,
@@ -154,11 +156,17 @@ Experience Styles
   text-transform: uppercase;
 }*/
 
-/*.e1 p,
+.e1 p,
 .e3 p,
 .e5 p {
   margin: 0;
-}*/
+}
+
+.e2,
+.e4,
+.e6 {
+  margin: 1em 0;
+}
 
 /* ======================
 
@@ -166,10 +174,52 @@ Skills Styles
 
 ======================= */
 
+.skills {
+  margin: 0 1em;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .skills h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 5.5em 0 1.5em 0;
+  margin: 4.5em 0 1em 0;
+  border-bottom: 2px dashed #594649;
+}
+
+.s1 ul,
+.s2 ul,
+.s3 ul,
+.s4 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.s1,
+.s2,
+.s3,
+.s4 {
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+.s1 {
+  order: 1;
+}
+
+.s2 {
+  order: 2;
+}
+
+.s3 {
+  order: 3;
+}
+
+.s4 {
+  order: 4;
 }
 
 /* ======================
@@ -180,11 +230,13 @@ Education Styles
 
 .education {
   text-align: center;
+  margin: 0 1em 5.5em 1em;
 }
 
 .education h3 {
   text-transform: uppercase;
   margin: 5.5em 0 1em 0;
+  border-bottom: 2px dashed #594649;
 }
 
 /* ======================
@@ -193,10 +245,16 @@ Portfolio Styles
 
 ======================= */
 
+#portfolio {
+  background: #E5E5E5;
+  width: 100%;
+  margin: 0 auto;
+}
+
 #portfolio h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 5.5em 0 5.5em 0;
+  margin: 1.5em 0 1em 0;
 }
 
 /* ======================
@@ -206,6 +264,7 @@ Gallery Styles
 ======================= */
 
 .gallery {
+  background: #E5E5E5;
   width: 100%;
   margin: 0 auto;
   height: auto;
@@ -216,7 +275,7 @@ Gallery Styles
 }
 
 .galleryItem img {
-  max-width: 100%;
+  max-width: 95%;
 }
 
 .galleryItem:not(:last-of-type) {
@@ -229,17 +288,30 @@ Contact Styles
 
 ======================= */
 
-#contact h3 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 5.5em 0 2.5em 0;
-}
-
 #contact {
-  background: #fff;
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin: 0 0 1em 0;
+}
+
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5.5em 0 1em 0;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.c1 {
+  padding-right: 1em;
+}
+
+.c2 {
+  padding-left: 1em;
 }
 
 #contact ul {

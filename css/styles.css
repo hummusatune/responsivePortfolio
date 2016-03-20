@@ -274,8 +274,12 @@ Gallery Styles
   text-align: center;
 }
 
+.galleryItem {
+  border: 1em solid #fff;
+}
+
 .galleryItem img {
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .galleryItem:not(:last-of-type) {
@@ -292,7 +296,7 @@ Contact Styles
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0 0 1em 0;
+  margin: 0 0 2.5em 0;
 }
 
 #contact h3 {

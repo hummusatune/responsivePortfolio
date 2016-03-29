@@ -19,7 +19,7 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-bottom: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 h1,
@@ -127,45 +127,58 @@ Header Styles
 
 /* ======================
 
-Experience Styles
+Portfolio Styles
 
 ======================= */
 
-.experience {
+#portfolio {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#portfolio h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5em 0 1em 0;
+}
+
+/* ======================
+
+Gallery Styles
+
+======================= */
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
   display: flex;
   flex-flow: column;
-  margin: 0 1em;
-}
-
-.experience h3 {
   text-align: center;
-  text-transform: uppercase;
-  margin: 5.5em 0 1em 0;
-  border-bottom: 2px dashed #594649;
 }
 
-.e1, .e3, .e5 {
-  text-align: center;
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-size: 1.1em;
+.galleryItem img {
+  max-width: 100%;
 }
 
-/*.e1 p:first-child,
-.e3 p:first-child,
-.e5 p:first-child {
-  text-transform: uppercase;
-}*/
-
-.e1 p,
-.e3 p,
-.e5 p {
-  margin: 0;
+.galleryItem h4 {
+  opacity: 0;
+  color: #594649;
+  background-color:rgba(0,0,0,.3);
+   -webkit-transition: all 0.5s ease-in; 
+     -moz-transition: all  0.5s ease-in; 
+       -o-transition: all  0.5s ease-in;  
+          transition: all  0.5s ease-in;
 }
 
-.e2,
-.e4,
-.e6 {
-  margin: 1em 0;
+.galleryItem:hover h4 {
+  opacity: 1;
+}
+
+.galleryItem:not(:last-of-type) {
+  margin-bottom: 2.5em;
 }
 
 /* ======================
@@ -237,53 +250,6 @@ Education Styles
   text-transform: uppercase;
   margin: 5.5em 0 1em 0;
   border-bottom: 2px dashed #594649;
-}
-
-/* ======================
-
-Portfolio Styles
-
-======================= */
-
-#portfolio {
-  background: #E5E5E5;
-  width: 100%;
-  margin: 0 auto;
-}
-
-#portfolio h3 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 1.5em 0 1em 0;
-}
-
-/* ======================
-
-Gallery Styles
-
-======================= */
-
-.gallery {
-  background: #E5E5E5;
-  width: 100%;
-  margin: 0 auto;
-  height: auto;
-  padding: 0;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-}
-
-.galleryItem {
-  border: 1em solid #fff;
-}
-
-.galleryItem img {
-  max-width: 100%;
-}
-
-.galleryItem:not(:last-of-type) {
-  margin-bottom: 2.5em;
 }
 
 /* ======================

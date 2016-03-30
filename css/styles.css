@@ -19,7 +19,6 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  border-bottom: 1px solid #e1e1e1;
 }
 
 h1,
@@ -76,7 +75,7 @@ Navigation Styles
 }
 
 .navList a {
-  background-color: #B6C9CD;
+  background-color: #b6c9cd;
   color: #594649;
   display: block;
   padding: 1em 2.5em;
@@ -104,25 +103,24 @@ Header Styles
   flex-flow: column;
   align-items: center;
   overflow: hidden;
-  background: url(../img/notomRoad1100x474.jpg) #EEEEEE no-repeat center center fixed; 
+  background: url(../img/notomRoad1100x474.jpg) #eee no-repeat center center fixed; 
   background-size: cover;
   min-height: 400px;
 }
 
-.headerBio {
-  max-width: 500px;
-  text-align: center;
-  margin: 2.5em .4em;
-  color: #594649;
-  order: 2;
-}
-
 .headerPic {
-  background: #F64740;
+  background: #f64740;
   width: 150px;
   height: 150px;
   margin: 2.5em 1em 0 1em;
-  order: 1;
+}
+
+.headerTag {
+  max-width: 500px;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 2.5em .4em;
+  color: #594649;
 }
 
 /* ======================
@@ -140,7 +138,7 @@ Portfolio Styles
 #portfolio h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 1.5em 0 1em 0;
+  margin: 2.5em 0 1em 0;
 }
 
 /* ======================
@@ -159,26 +157,45 @@ Gallery Styles
   text-align: center;
 }
 
+.galleryItem {
+  position: relative;
+  margin: .5em 0;
+  cursor: pointer;
+}
+
+
 .galleryItem img {
   max-width: 100%;
+  min-width: 320px;
+  min-height: 215px;
+  opacity: 1;
+   -webkit-transition: all 0.2s ease-in; 
+     -moz-transition: all  0.2s ease-in; 
+       -o-transition: all  0.2s ease-in;  
+          transition: all  0.2s ease-in;
 }
 
-.galleryItem h4 {
+.galleryItem h3 {
+  position: absolute;
+  text-transform: uppercase;
   opacity: 0;
   color: #594649;
-  background-color:rgba(0,0,0,.3);
-   -webkit-transition: all 0.5s ease-in; 
-     -moz-transition: all  0.5s ease-in; 
-       -o-transition: all  0.5s ease-in;  
-          transition: all  0.5s ease-in;
+  top: 50%;
+  left: 25%;
+  margin: 0;
+  
 }
 
-.galleryItem:hover h4 {
+.galleryItem:hover h3 {
   opacity: 1;
 }
 
-.galleryItem:not(:last-of-type) {
-  margin-bottom: 2.5em;
+.galleryItem:hover img {
+  opacity: 0.1;
+   -webkit-transition: all 0.3s ease-in; 
+     -moz-transition: all  0.3s ease-in; 
+       -o-transition: all  0.3s ease-in;  
+          transition: all  0.3s ease-in;
 }
 
 /* ======================
@@ -188,7 +205,7 @@ Skills Styles
 ======================= */
 
 .skills {
-  margin: 0 1em;
+  margin: 0 1em 2em;
 }
 
 .skillsWrapper {
@@ -199,7 +216,7 @@ Skills Styles
 .skills h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 4.5em 0 1em 0;
+  margin: 1.5em 0 1em 0;
   border-bottom: 2px dashed #594649;
 }
 
@@ -237,38 +254,23 @@ Skills Styles
 
 /* ======================
 
-Education Styles
-
-======================= */
-
-.education {
-  text-align: center;
-  margin: 0 1em 5.5em 1em;
-}
-
-.education h3 {
-  text-transform: uppercase;
-  margin: 5.5em 0 1em 0;
-  border-bottom: 2px dashed #594649;
-}
-
-/* ======================
-
 Contact Styles
 
 ======================= */
 
 #contact {
+  background: #b6c9cd;
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin: 0 0 2.5em 0;
+  padding: 0 0 2.5em 0;
+  margin: 0 0 1em 0;
 }
 
 #contact h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 5.5em 0 1em 0;
+  margin: 2.5em 0 1em 0;
 }
 
 .contactWrapper {
@@ -382,7 +384,7 @@ Media Queries
     border: none;
   }
 
-  .headerBio {
+  .headerTag {
     margin: 0 .5em;
     align-self: center;
   }
@@ -395,8 +397,8 @@ Media Queries
   }
 
   .galleryItem {
-    min-width: 350px;
-    max-width: 350px;
+    max-width: 300px
+    height: auto;
   }
 
   footer {

@@ -103,7 +103,7 @@ Header Styles
   flex-flow: column;
   align-items: center;
   overflow: hidden;
-  background: url(../img/notomRoad1100x474.jpg) #eee no-repeat center center fixed; 
+  background: url(../img/notomRoadCrossPattern1600x685.jpg) #eee no-repeat center center fixed; 
   background-size: cover;
   min-height: 400px;
 }
@@ -120,7 +120,7 @@ Header Styles
   font-size: 1.1em;
   text-align: center;
   margin: 2.5em .4em;
-  color: #594649;
+  color: #fff;
 }
 
 /* ======================
@@ -397,7 +397,7 @@ Media Queries
   }
 
   .galleryItem {
-    max-width: 300px
+    max-width: 300px;
     height: auto;
   }
 
@@ -425,6 +425,23 @@ Media Queries
 
   .name {
     width: 300px;
+  }
+
+  .gallery {
+    max-width: 1240px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galleryItem {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .skillsWrapper {
+    margin: 0 auto;
+    width: 500px;
   }
 
 }

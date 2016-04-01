@@ -435,7 +435,7 @@ Media Queries
   }
 
   .galleryItem {
-    max-width: 300px;
+    width: auto;
     height: auto;
   }
 
